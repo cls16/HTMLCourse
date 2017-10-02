@@ -1,0 +1,51 @@
+h1{
+    background:#000000;
+    color:#00ff63;
+    text-align:center;
+    margin-bottom: 40px;
+}
+
+section{
+    width: 30%;
+    display: inline;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+footer{
+    background:#000000;
+    color:#00ff63;
+    text-align: center;
+    clear: both;
+    padding: 30px;
+}
+
+header{
+    background: #000000;
+    text-align: center;
+    padding: 15px;
+}
+
+nav > a{
+    background: #808080;
+    color:#00ff63;
+    text-decoration: none;
+    border: solid;
+    padding: 20px;
+}
+
+nav > a:hover{
+    background:#00ff63;
+    color: #808080;
+}
+
+#footerParagraph{
+    margin-bottom: 40px;
+}
+
+
+
+
+
