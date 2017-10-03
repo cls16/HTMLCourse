@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Beijing;
+    src: url(Fonts/Beijing.ttf);
+
+}
+
+@font-face{
+    font-family: Romulan;
+    src: url(Fonts/Romulant.ttf);
+}
+
+*{
+    font-family: Beijing;
+}
+
+
