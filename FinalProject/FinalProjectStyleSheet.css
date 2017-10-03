@@ -45,12 +45,12 @@ nav > a:hover{
     margin-bottom: 40px;
 }
 
-p ::-moz-selection{
+::-moz-selection{
     background: #00ff63;
     color: #808080
 }
 
-p ::selection{
+::selection{
     background: #00ff63;
     color: #808080
 }
