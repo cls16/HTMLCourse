@@ -55,6 +55,20 @@ nav > a:hover{
     color: #808080
 }
 
+.halfpagesection{
+    width:47%;
+}
+
+#fullpagesection{
+    width:99%;
+}
+
+.halfpagesection > h2, #fullpagesection > h2{
+    background: #00ff63;
+    border: solid;
+    padding: 10px;
+}
+
 
 
 
