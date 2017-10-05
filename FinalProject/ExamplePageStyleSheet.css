@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Scientific;
+    src: url("Fonts/ElectroShackle.otf");
+
+}
+
+h1, h2{
+    font-family: Scientific;
+}
+
+table, th, td{
+    border: solid;
+    border-color: #FF0000;
+}
