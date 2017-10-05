@@ -19,13 +19,19 @@ footer{
     color:#00ff63;
     text-align: center;
     clear: both;
+    border: hidden;
+    border-radius: 35px;
     padding: 30px;
 }
 
 header{
     background: #000000;
     text-align: center;
+    border: hidden;
+    border-radius: 35px;
     padding: 15px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 nav > a{
@@ -33,6 +39,7 @@ nav > a{
     color:#00ff63;
     text-decoration: none;
     border: solid;
+    border-radius: 30px;
     padding: 20px;
 }
 
@@ -60,12 +67,14 @@ nav > a:hover{
 }
 
 #fullpagesection{
-    width:99%;
+    width:100%;
 }
 
 .halfpagesection > h2, #fullpagesection > h2{
-    background: #00ff63;
-    border: solid;
+    background: #000000;
+    color: #00ff63;
+    border: hidden;
+    border-radius: 25px;
     padding: 10px;
 }
 
