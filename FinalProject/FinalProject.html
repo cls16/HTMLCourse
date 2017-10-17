@@ -2,21 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Final Project</title>
+    <title>Home</title>
     <link rel="stylesheet" href="FinalProjectStyleSheet.css">
 </head>
-<body>
+<body onload="loadVideoGames()">
     <header>
         <h1>Caleb Syring</h1>
-        <nav><a href="https://cls16.github.io/HTMLCourse/FinalProject/FinalProject.html">Home</a>&nbsp;<a href="StarTrekPage.html">Star Trek</a>&nbsp;<a href="ExamplePage.html">Surprise</a>&nbsp;<a href="Four.html">Four</a></nav>
+        <nav><a href="https://cls16.github.io/HTMLCourse/FinalProject/FinalProject.html">Home</a>&nbsp;<a href="StarTrekPage.html">Star Trek</a>&nbsp;<a href="ExamplePage.html">Surprise</a>&nbsp;<a onclick="emptyLinkAlert()" href="">Empty Link</a></nav>
+        <script>
+            function emptyLinkAlert(){
+                alert("You have clicked on an empty link, therefore it will not take you anywhere. Sorry.");
+            }
+            function hide(){
+                x=document.getElementById("demo");
+   		        x.style.display="none";
+            }
+            function reveal(){
+                y=document.getElementById("demo");
+                y.style.display="block"
+            }
+            var videoGames = ["Battlefield 1", "Madden 17", "Call of Duty: Advanced Warfare", "Star Wars Battlefront"]
+            function loadVideoGames(){
+                document.getElementById("videoGameList").innerHTML = videoGames;
+                console.log("The video games have been successfully loaded.")
+            }
+        </script>
     </header>
     <section class="halfpagesection">
         <h2>Favorite Foods</h2>
         <ul>
             <li>Medium-Rare Ribeye Steak</li>
-            <li>Ice Cream</li>
+            <li>Hamburgers</li>
             <li>Pizza</li>
+            <li>Spicy Chicken Sandwiches</li>
             <li>Doughnuts</li>
+            <li>Berry Burst Streudels</li>
+            <li>Ice Cream</li>
+            <li>Fudge Mint Cookie Ice Cream Cake</li>
+            <li>AND EVERYTHING YUMMY!!!</li>
         </ul>
     </section>
     <section class="halfpagesection">
@@ -25,7 +48,7 @@
         <p>Progress in the Specialization capstone (20%)</p><meter value=".2">20%</meter>
         <p>Progress in life goals (5%)</p><meter value=".05">5%</meter>
     </section>
-    <section id="fullpagesection">
+    <section class="fullpagesection">
         <h2>More About Me</h2>
         <p>I really like football, NFL, not college. The Green Bay Packers are my favorite team. They ha
             ve a wide variety of offensive weapons. I am kind of addicted to drafting teams on Madden 15
@@ -34,9 +57,35 @@
         </p>
         <p>I also really like country music. Garth Brooks is probably my favorite artist. Devil Went Down to Georgia might be my favorite song.</p>
         <details>
+            <summary>Video Games</summary>
+            <p id="videoGameList"></p>
+        </details>
+        <details>
             <summary>My Childhood</summary>
             <p>I lived in a split-level with a small backyard. I miss the fun games we kids used to play in the basement.</p>
         </details>
+    </section>
+    <section class="halfpagesection">
+        <h2>Buttons</h2>
+        <p>This section is devoted entirely to buttons.</p>
+        <p>Click the buttons below to hide and reveal the demonstration paragraph that is actually a sentence.</p>
+        <button onclick="hide()">Hide</button>
+        <button onclick="reveal()">Reveal</button>
+        <p id="demo">I AM THE DEMONSTRATION AND AN EYESORE.</p>
+        <p>This is a styled button (WARNING: DO NOT CLICK):</p>
+        <button onclick="location.href='http://media.beam.usnews.com/5a/2f/e915a47e4478944998463052c3eb/170821-nuclearexplosion-stock.jpg';" id="styledButton">R</button>
+    </section>
+    <section class="halfpagesection">
+        <h2>Forms</h2>
+        <p>Who doesn't like a good form? Fill out the one below!</p>
+        <form>
+            <label for='Name'>Name:</label>
+            <input type='text' id='name' name='name' placeholder='First Middle Last'></br>
+            <label>Email:<input type='email' name ='email' placeholder='me@me.com'></label></br>
+            <label for='Birth'>Birth:</label>
+            <input type='date' id='birth' placeholder='1/1/2000'></br>
+            <input type='submit' value='Submit'>
+        </form>
     </section>
     <footer>
         <img src="newlogo.png" alt="WD4E Logo"/><p id="footerParagraph">This page was created by Caleb Syring and Colleen van Lent. To learn more about web design, visit:</div>&nbsp;<a href="https://www.coursera.org/specializations/web-design" target="_blank">Intro to Web Design</a>
