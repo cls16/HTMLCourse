@@ -26,6 +26,14 @@
                 document.getElementById("videoGameList").innerHTML = videoGames;
                 console.log("The video games have been successfully loaded.")
             }
+            function check(){
+                var password = document.getElementById('password');
+                var passwordRepeat = document.getElementById('passwordRepeat');
+                if (password.value != passwordRepeat.value){
+                    alert('Your passwords must match!')
+                    return false;
+                }
+            }
         </script>
     </header>
     <section class="halfpagesection">
@@ -69,8 +77,8 @@
         <h2>Buttons</h2>
         <p>This section is devoted entirely to buttons.</p>
         <p>Click the buttons below to hide and reveal the demonstration paragraph that is actually a sentence.</p>
-        <button onclick="hide()">Hide</button>
         <button onclick="reveal()">Reveal</button>
+        <button onclick="hide()">Hide</button>
         <p id="demo">I AM THE DEMONSTRATION AND AN EYESORE.</p>
         <p>This is a styled button (WARNING: DO NOT CLICK):</p>
         <button onclick="location.href='http://media.beam.usnews.com/5a/2f/e915a47e4478944998463052c3eb/170821-nuclearexplosion-stock.jpg';" id="styledButton">R</button>
@@ -79,16 +87,22 @@
         <h2>Forms</h2>
         <p>Who doesn't like a good form? Fill out the one below!</p>
         <form>
-            <label for='Name'>Name:</label>
-            <input type='text' id='name' name='name' placeholder='First Middle Last'></br>
-            <label>Email:<input type='email' name ='email' placeholder='me@me.com'></label></br>
-            <label for='Birth'>Birth:</label>
-            <input type='date' id='birth' placeholder='1/1/2000'></br>
-            <input type='submit' value='Submit'>
+            <label for='Name'>Name: </label>
+            <input type='text' id='name' name='name' placeholder='First Middle Last' autocomplete='off' required></br>
+            <label>Email: <input type='email' id='email' name ='email' placeholder='me@me.com' required></label></br>
+            <label for='Birth'>Birth: </label>
+            <input type='date' id='birth' placeholder='1/1/2000' required></br>
+            Gender<br>
+            <label><input type='radio' name='gender' value='Male'>Male</label><br>
+            <label><input type='radio' name='gender' value='Female'>Female</label><br>
+            <label>Password: <input type='password' name='password' id='password' required><br>
+            <label>Re-type password: <input type='password'  name='password' id='passwordRepeat' onchange='check()' required><br>
+            <input type='submit' value='Submit' onclick='return check()'>
         </form>
+        <p class="note">Note: If all forms are correctly filled, clicking the submit button will reload the page.</p>
     </section>
     <footer>
-        <img src="newlogo.png" alt="WD4E Logo"/><p id="footerParagraph">This page was created by Caleb Syring and Colleen van Lent. To learn more about web design, visit:</div>&nbsp;<a href="https://www.coursera.org/specializations/web-design" target="_blank">Intro to Web Design</a>
+        <img src="newlogo.png" id= "WD4E" alt="WD4E Logo"/><p id="footerParagraph">This page was created by Caleb Syring and Colleen van Lent. To learn more about web design, visit:</div>&nbsp;<a href="https://www.coursera.org/specializations/web-design" target="_blank">Intro to Web Design</a>
     </footer>
 </body>
 </html>
