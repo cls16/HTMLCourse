@@ -1,5 +1,4 @@
 h1{
-    background:#000000;
     color:#00ff63;
     text-align:center;
     margin-bottom: 40px;
@@ -26,27 +25,25 @@ footer{
 
 header{
     background: #000000;
-    text-align: center;
-    border: hidden;
-    border-radius: 35px;
+    text-align: center;;
     padding: 15px;
-    width: 100%;
+    padding-bottom:30px;
+    width: 98%;
     margin-bottom: 20px;
 }
 
 nav > a{
     box-sizing:border-box;
-    background: #808080;
-    color:#00ff63;
+    background: #00ff63;
+    color:#000000;
     text-decoration: none;
-    border: solid;
-    border-radius: 30px;
     padding: 20px;
 }
 
 nav > a:hover{
     background:#00ff63;
     color: #808080;
+    border:none;
 }
 
 #footerParagraph{
@@ -61,14 +58,6 @@ nav > a:hover{
 ::selection{
     background: #00ff63;
     color: #808080
-}
-
-.halfpagesection{
-    width:47%;
-}
-
-.fullpagesection{
-    width:100%;
 }
 
 .halfpagesection > h2, .fullpagesection > h2{
@@ -99,8 +88,30 @@ nav > a:hover{
     font-size:50px;
 }
 
+.note{
+    color:#AFAFAF;
+    font-family:Verdana;
+    font-size:10px;
+}
 
+#name,#email,#birth,#password,#passwordRepeat{
+    margin-bottom:5px;
+}
 
-
+@media screen and (max-width:500px){
+    header{
+        width:90%;
+    }
+    nav > a{
+        display:block;
+    }
+    section{
+        width:100%;
+        display: block;
+    }
+    #WD4E{
+        width:200px
+    }
+}
 
 
