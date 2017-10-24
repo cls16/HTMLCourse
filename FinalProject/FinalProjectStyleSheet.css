@@ -60,6 +60,14 @@ nav > a:hover{
     color: #808080
 }
 
+.halfpagesection{
+    width:47%;
+}
+
+.fullpagesection{
+    width:100%;
+}
+
 .halfpagesection > h2, .fullpagesection > h2{
     background: #000000;
     color: #00ff63;
@@ -98,19 +106,46 @@ nav > a:hover{
     margin-bottom:5px;
 }
 
-@media screen and (max-width:500px){
+/* make this 500px-V */
+@media screen and (max-width:900px){
     header{
-        width:90%;
+        width:20%;
+        font-size:.8em;
+        float:left;
+        height:100vh;
+        position:fixed;
     }
     nav > a{
         display:block;
+        font-size:.8rem;
     }
-    section{
-        width:100%;
-        display: block;
+    .halfpagesection{
+        width:70%;
+        display: inline-block;
+        float:right;
+        margin-left:1%;
+        font-size:.8rem;
+    }
+    .fullpagesection{
+        width:70%;
+        display: inline-block;
+        float:right;
+        margin-left:1%;
+        font-size:.8rem;
+    }
+    footer{
+        width:58%;
+        display: inline-block;
+        float:right;
+        margin-left:1%;
+        border-radius:25px;
+        font-size:.8rem;
+    }
+    #footerParagraph{
+        margin:0px;
     }
     #WD4E{
-        width:200px
+        width:50%;
     }
 }
 
