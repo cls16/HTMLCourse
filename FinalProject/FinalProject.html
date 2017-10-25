@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <title>Home</title>
     <link rel="icon" href="C.png">
-    <link rel="stylesheet" href="FinalProjectStyleSheet.css">
+    <!-- <link rel="stylesheet" href="FinalProjectStyleSheet.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body onload="loadVideoGames()">
     <header>
         <h1>Caleb Syring</h1>
-        <nav><a href="https://cls16.github.io/HTMLCourse/FinalProject/FinalProject.html">Home</a>&nbsp;<a href="StarTrekPage.html">Star Trek</a>&nbsp;<a href="ExamplePage.html">Surprise</a>&nbsp;<a onclick="emptyLinkAlert()" href="">Empty Link</a></nav>
+        <ul class="nav nav-pills nav-justified">
+            <li class="active"> <a href="https://cls16.github.io/HTMLCourse/FinalProject/FinalProject.html">Home</a></li>
+            <li class="dropdown"> <a href="StarTrekPage.html">Star Trek</a></li>
+            <li> <a href="ExamplePage.html">Surprise</a></li>
+            <li> <a onclick="emptyLinkAlert()" href="">Empty Link</a></li>
+        </ul>
         <script>
             function emptyLinkAlert(){
                 alert("You have clicked on an empty link, therefore it will not take you anywhere. Sorry.");
@@ -37,7 +45,7 @@
             }
         </script>
     </header>
-    <section id="favfoods" class="halfpagesection">
+    <section id="favfoods" class="col-xs-12 col-md-3">
         <h2>Favorite Foods</h2>
         <ul>
             <li>Medium-Rare Ribeye Steak</li>
@@ -51,13 +59,13 @@
             <li>AND EVERYTHING YUMMY!!!</li>
         </ul>
     </section>
-    <section class="halfpagesection">
+    <section class="col-md-3">
         <h2>Achievements</h2>
         <p>Progress in this course (100%)</p><meter value="1">100%</meter>
         <p>Progress in the Specialization capstone (20%)</p><meter value=".2">20%</meter>
         <p>Progress in life goals (5%)</p><meter value=".05">5%</meter>
     </section>
-    <section class="fullpagesection">
+    <section class="col-md-3">
         <h2>More About Me</h2>
         <p>I really like football, NFL, not college. The Green Bay Packers are my favorite team. They ha
             ve a wide variety of offensive weapons. I am kind of addicted to drafting teams on Madden 15
@@ -74,7 +82,7 @@
             <p>I lived in a split-level with a small backyard. I miss the fun games we kids used to play in the basement.</p>
         </details>
     </section>
-    <section class="halfpagesection">
+    <section class="col-md-3">
         <h2>Buttons</h2>
         <p>This section is devoted entirely to buttons.</p>
         <p>Click the buttons below to hide and reveal the demonstration paragraph that is actually a sentence.</p>
@@ -84,7 +92,7 @@
         <p>This is a styled button (WARNING: DO NOT CLICK):</p>
         <button onclick="location.href='http://media.beam.usnews.com/5a/2f/e915a47e4478944998463052c3eb/170821-nuclearexplosion-stock.jpg';" id="styledButton">R</button>
     </section>
-    <section class="halfpagesection">
+    <section class="col-md-12">
         <h2>Forms</h2>
         <p>Who doesn't like a good form? Fill out the one below!</p>
         <form>
@@ -103,7 +111,7 @@
         <p class="note">Note: If all forms are correctly filled, clicking the submit button will reload the page.</p>
     </section>
     <footer>
-        <img src="newlogo.png" id= "WD4E" alt="WD4E Logo"/><p id="footerParagraph">This page was created by Caleb Syring and Colleen van Lent. To learn more about web design, visit:</div>&nbsp;<a href="https://www.coursera.org/specializations/web-design" target="_blank">Intro to Web Design</a>
+        <img src="newlogo.png" class="hidden-xs visible-md" id= "WD4E" alt="WD4E Logo"/><p class="col-md-12"id="footerParagraph">This page was created by Caleb Syring and Colleen van Lent. To learn more about web design, visit:</div>&nbsp;<a href="https://www.coursera.org/specializations/web-design" target="_blank">Intro to Web Design</a>
     </footer>
 </body>
 </html>
